@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.view.controller.QuestionAEController">
+   <children>
+      <Label prefHeight="725.0" prefWidth="45.0" style="-fx-background-color: #5CB2FF;" />
+      <Label layoutX="555.0" prefHeight="725.0" prefWidth="45.0" style="-fx-background-color: #5CB2FF;" />
+      <JFXTextField fx:id="id" layoutX="131.0" layoutY="223.0" prefHeight="30.0" prefWidth="387.0" />
+      <JFXTextField fx:id="a2" layoutX="132.0" layoutY="410.0" prefHeight="30.0" prefWidth="387.0" />
+      <JFXTextField fx:id="a1" layoutX="132.0" layoutY="347.0" prefHeight="30.0" prefWidth="387.0" />
+      <JFXTextField fx:id="text" layoutX="131.0" layoutY="284.0" prefHeight="30.0" prefWidth="387.0" />
+      <Label layoutX="91.0" layoutY="238.0" text="ID：" />
+      <Label layoutX="48.0" layoutY="292.0" text="问题描述：" />
+      <Label layoutX="80.0" layoutY="176.0" text="类型：" />
+      <Label layoutX="69.0" layoutY="355.0" text="选项1：" />
+      <Label layoutX="69.0" layoutY="416.0" text="选项2：" />
+      <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="641.0" onAction="#confirm" prefHeight="47.0" prefWidth="111.0" style="-fx-background-color: #77c2bb;" text="确定" />
+      <JFXButton buttonType="RAISED" layoutX="340.0" layoutY="641.0" onAction="#cancel" prefHeight="47.0" prefWidth="111.0" style="-fx-background-color: #E81123;" text="取消" textFill="WHITE" />
+      <ImageView fitHeight="178.0" fitWidth="367.0" layoutX="117.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/qae.png" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="type" layoutX="131.0" layoutY="164.0" prefHeight="20.0" prefWidth="387.0" />
+      <JFXTextField fx:id="a3" layoutX="133.0" layoutY="474.0" prefHeight="30.0" prefWidth="387.0" />
+      <Label layoutX="69.0" layoutY="481.0" text="选项3：" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Patient>
+    <Patient>
+        <birthday>2021-7-3</birthday>
+        <name>bbb</name>
+        <phone>1321312</phone>
+        <emergency>3213123</emergency>
+        <emerphone>21312</emerphone>
+        <idcode>3213123</idcode>
+        <sex>男</sex>
+    </Patient>
+    <Patient>
+        <birthday>2021-7-10</birthday>
+        <name>sdfsdfsa地方</name>
+        <phone>123131231</phone>
+        <emergency>31231231</emergency>
+        <emerphone>3213123</emerphone>
+        <idcode>321312</idcode>
+        <sex>男</sex>
+    </Patient>
+</Patient>

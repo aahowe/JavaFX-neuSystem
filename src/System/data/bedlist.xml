@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Bed>
+    <Bed>
+        <bed>423</bed>
+        <endDate>2021-7-31</endDate>
+        <floor>4324</floor>
+        <id>7095</id>
+        <idcode>209720</idcode>
+        <number>4324</number>
+        <patient>
+            <birthday>2021-7-10</birthday>
+            <name>sdfsdfsa地方</name>
+            <phone>123131231</phone>
+            <emergency>31231231</emergency>
+            <emerphone>3213123</emerphone>
+            <idcode>321312</idcode>
+            <sex>男</sex>
+        </patient>
+        <room>234</room>
+        <startDate>2021-7-29</startDate>
+        <status>4342</status>
+    </Bed>
+    <Bed>
+        <bed>321</bed>
+        <endDate>2021-7-31</endDate>
+        <floor>2312</floor>
+        <id>8668</id>
+        <idcode>462744</idcode>
+        <number>312312</number>
+        <patient>
+            <birthday>2021-7-3</birthday>
+            <name>bbb</name>
+            <phone>1321312</phone>
+            <emergency>3213123</emergency>
+            <emerphone>21312</emerphone>
+            <idcode>3213123</idcode>
+            <sex>男</sex>
+        </patient>
+        <room>1231</room>
+        <startDate>2021-7-30</startDate>
+        <status>3213</status>
+    </Bed>
+</Bed>

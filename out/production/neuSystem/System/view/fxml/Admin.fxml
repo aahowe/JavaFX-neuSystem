@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="admin" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../../styles/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.view.controller.AdminController">
+    <children>
+        <JFXButton fx:id="signout" buttonType="RAISED" layoutX="1173.0" layoutY="50.0" onAction="#signout" prefHeight="33.0" prefWidth="82.0" style="-fx-background-color: #E81123 #E81123;" text="注销" textFill="WHITE" />
+        <ImageView fitHeight="85.0" fitWidth="425.0" layoutX="811.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../img/admintitle.png" />
+            </image>
+        </ImageView>
+      <ButtonBar layoutX="438.0" layoutY="83.0" prefHeight="33.0" prefWidth="260.0">
+         <buttons>
+              <JFXButton fx:id="add" buttonType="RAISED" onAction="#add" style="-fx-background-color: #5CB2FF;" text="添加" />
+              <JFXButton fx:id="edit" buttonType="RAISED" onAction="#edit" style="-fx-background-color: #5CB2FF;" text="修改" />
+              <JFXButton fx:id="delete" buttonType="RAISED" onAction="#delete" style="-fx-background-color: #5CB2FF;" text="删除" />
+         </buttons>
+      </ButtonBar>
+      <JFXComboBox fx:id="menu" layoutX="21.0" layoutY="129.0" onAction="#menu" prefHeight="33.0" prefWidth="136.0" promptText="医生" />
+      <JFXToggleButton fx:id="id" layoutX="8.0" layoutY="244.0" onAction="#viewid" selected="true" text="登录名" />
+      <JFXToggleButton fx:id="name" layoutX="8.0" layoutY="304.0" onAction="#viewname" selected="true" text="姓名" />
+      <JFXToggleButton fx:id="birthday" layoutX="8.0" layoutY="364.0" onAction="#viewbirth" selected="true" text="出生日期" />
+      <JFXToggleButton fx:id="jobtitle" layoutX="8.0" layoutY="424.0" onAction="#viewtitle" selected="true" text="职称" />
+      <JFXToggleButton fx:id="specialty" layoutX="8.0" layoutY="484.0" onAction="#viewspc" selected="true" text="专长" />
+      <JFXToggleButton fx:id="phone" layoutX="8.0" layoutY="544.0" onAction="#viewphone" selected="true" text="手机号" />
+      <JFXTextField fx:id="searchfield" layoutX="185.0" layoutY="83.0" onKeyReleased="#search" promptText="搜索用户名" />
+      <JFXProgressBar fx:id="progressbar" layoutX="185.0" layoutY="133.0" prefHeight="4.0" prefWidth="1098.0" />
+      <TableView fx:id="tableview" layoutX="185.0" layoutY="135.0" prefHeight="600.0" prefWidth="1098.0">
+        <columns>
+          <TableColumn fx:id="idcol" prefWidth="183.0" text="用户名" />
+          <TableColumn fx:id="namecol" prefWidth="183.0" text="姓名" />
+          <TableColumn fx:id="birthdaycol" prefWidth="183.0" text="出生日期" />
+          <TableColumn fx:id="specialtycol" prefWidth="183.0" text="专长" />
+          <TableColumn fx:id="jobtitlecol" prefWidth="183.0" text="职称" />
+          <TableColumn fx:id="phonecol" prefWidth="183.0" text="联系电话" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

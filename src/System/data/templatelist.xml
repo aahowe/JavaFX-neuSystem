@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Template>
+    <Template>
+        <id>123</id>
+        <name>奥利弗就哇哦</name>
+        <q1>
+            <a1>为  而无法</a1>
+            <a2> 范围分为</a2>
+            <a3>额分分分2</a3>
+            <id>3</id>
+            <text>服务分为氛围1</text>
+            <type>A</type>
+        </q1>
+        <q2>
+            <a1>让3让3</a1>
+            <a2>3133</a2>
+            <a3>而成阿 </a3>
+            <id>232</id>
+            <text>233让</text>
+            <type>A</type>
+        </q2>
+        <q3>
+            <a1>3213</a1>
+            <a2>32131</a2>
+            <a3>3213</a3>
+            <id>123123</id>
+            <text>34124</text>
+            <type>B</type>
+        </q3>
+        <type>A</type>
+    </Template>
+    <Template>
+        <id>让人</id>
+        <name>2424</name>
+        <q1>
+            <a1>为  而无法</a1>
+            <a2> 范围分为</a2>
+            <a3>额分分分2</a3>
+            <id>3</id>
+            <text>服务分为氛围1</text>
+            <type>A</type>
+        </q1>
+        <q2>
+            <a1>让3让3</a1>
+            <a2>3133</a2>
+            <a3>而成阿 </a3>
+            <id>232</id>
+            <text>233让</text>
+            <type>A</type>
+        </q2>
+        <q3>
+            <a1> 分为氛围</a1>
+            <a2> 我额外</a2>
+            <a3> 为fw</a3>
+            <id>4354</id>
+            <text>分为氛围</text>
+            <type>A</type>
+        </q3>
+        <type>A</type>
+    </Template>
+    <Template>
+        <id>qweqe</id>
+        <name>ewqqw</name>
+        <q1>
+            <a1>为  而无法</a1>
+            <a2> 范围分为</a2>
+            <a3>额分分分2</a3>
+            <id>3</id>
+            <text>服务分为氛围1</text>
+            <type>A</type>
+        </q1>
+        <q2>
+            <a1>让3让3</a1>
+            <a2>3133</a2>
+            <a3>而成阿 </a3>
+            <id>232</id>
+            <text>233让</text>
+            <type>A</type>
+        </q2>
+        <q3>
+            <a1>3213</a1>
+            <a2>32131</a2>
+            <a3>3213</a3>
+            <id>123123</id>
+            <text>34124</text>
+            <type>B</type>
+        </q3>
+        <type>A</type>
+    </Template>
+</Template>

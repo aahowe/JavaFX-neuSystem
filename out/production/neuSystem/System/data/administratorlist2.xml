@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Administrator>
+    <Administrator>
+        <birthday>2021-7-8</birthday>
+        <id>555</id>
+        <name>vv</name>
+        <phone>2313131</phone>
+        <jobtitle>护士</jobtitle>
+        <password>555</password>
+        <specialty>645624</specialty>
+    </Administrator>
+    <Administrator>
+        <birthday>2021-7-20</birthday>
+        <id>666</id>
+        <name>rrr</name>
+        <phone>312313</phone>
+        <jobtitle>护士</jobtitle>
+        <password>666</password>
+        <specialty>675675</specialty>
+    </Administrator>
+    <Administrator>
+        <birthday>2021-7-10</birthday>
+        <id>ffff</id>
+        <name>sfsd</name>
+        <phone>12345</phone>
+        <jobtitle>护士</jobtitle>
+        <password>wwwww</password>
+        <specialty>qqqq</specialty>
+    </Administrator>
+    <Administrator>
+        <birthday>2021-7-17</birthday>
+        <id>aaa</id>
+        <name>aaa</name>
+        <phone>213132</phone>
+        <jobtitle>护士</jobtitle>
+        <password>2313</password>
+        <specialty>132</specialty>
+    </Administrator>
+</Administrator>

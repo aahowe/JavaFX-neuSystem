@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.view.controller.BedAEController">
+   <children>
+      <Label prefHeight="725.0" prefWidth="45.0" style="-fx-background-color: #5CB2FF;" />
+      <Label layoutX="555.0" prefHeight="725.0" prefWidth="45.0" style="-fx-background-color: #5CB2FF;" />
+      <JFXTextField fx:id="status" layoutX="131.0" layoutY="177.0" prefHeight="30.0" prefWidth="387.0" />
+      <JFXTextField fx:id="room" layoutX="132.0" layoutY="364.0" prefHeight="30.0" prefWidth="387.0" />
+      <JFXTextField fx:id="floor" layoutX="132.0" layoutY="301.0" prefHeight="30.0" prefWidth="387.0" />
+      <JFXTextField fx:id="number" layoutX="131.0" layoutY="238.0" prefHeight="30.0" prefWidth="387.0" />
+      <JFXDatePicker fx:id="start" defaultColor="#4059a9" editable="false" layoutX="134.0" layoutY="490.0" prefHeight="30.0" prefWidth="421.0" />
+      <Label layoutX="77.0" layoutY="189.0" text="状态：" />
+      <Label layoutX="77.0" layoutY="246.0" text="楼号：" />
+      <Label layoutX="62.0" layoutY="133.0" text="入住人：" />
+      <Label layoutX="77.0" layoutY="308.0" text="楼层：" />
+      <Label layoutX="51.0" layoutY="556.0" prefHeight="20.0" prefWidth="76.0" text="结束时间：" />
+      <Label layoutX="79.0" layoutY="369.0" text="房号：" />
+      <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="641.0" onAction="#confirm" prefHeight="47.0" prefWidth="111.0" style="-fx-background-color: #77c2bb;" text="确定" />
+      <JFXButton buttonType="RAISED" layoutX="340.0" layoutY="641.0" onAction="#cancel" prefHeight="47.0" prefWidth="111.0" style="-fx-background-color: #E81123;" text="取消" textFill="WHITE" />
+      <ImageView fitHeight="178.0" fitWidth="367.0" layoutX="117.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/bedae.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="495.0" prefHeight="20.0" prefWidth="103.0" text="入住时间：" />
+      <JFXComboBox fx:id="patient" layoutX="131.0" layoutY="118.0" prefHeight="20.0" prefWidth="387.0" />
+      <JFXDatePicker fx:id="end" defaultColor="#4059a9" editable="false" layoutX="135.0" layoutY="553.0" prefHeight="30.0" prefWidth="421.0" />
+      <JFXTextField fx:id="bedid" layoutX="133.0" layoutY="428.0" prefHeight="30.0" prefWidth="387.0" />
+      <Label layoutX="77.0" layoutY="433.0" text="床号：" />
+   </children>
+</AnchorPane>

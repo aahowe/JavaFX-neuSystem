@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@../../styles/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.view.controller.DoctorController">
+    <children>
+        <JFXTabPane prefHeight="722.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="用户管理">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <AnchorPane fx:id="admin" prefHeight="720.0" prefWidth="1280.0">
+                                    <children>
+                                        <ButtonBar layoutX="438.0" layoutY="83.0" prefHeight="33.0" prefWidth="260.0">
+                                            <buttons>
+                                                <JFXButton fx:id="add" buttonType="RAISED" onAction="#add" style="-fx-background-color: #5CB2FF;" text="添加" textFill="WHITE" />
+                                                <JFXButton fx:id="edit" buttonType="RAISED" onAction="#edit" style="-fx-background-color: #5CB2FF;" text="修改" textFill="WHITE" />
+                                                <JFXButton fx:id="delete" buttonType="RAISED" onAction="#delete" style="-fx-background-color: #5CB2FF;" text="删除" textFill="WHITE" />
+                                    <JFXButton fx:id="analyze" buttonType="RAISED" onAction="#analyze" style="-fx-background-color: #A984FF;" text="评估" textFill="WHITE" />
+                                            </buttons>
+                                        </ButtonBar>
+                                        <JFXComboBox fx:id="menu" layoutX="15.0" layoutY="129.0" onAction="#menu" prefHeight="33.0" prefWidth="152.0" promptText="病患管理" />
+                                        <JFXToggleButton fx:id="name" layoutX="8.0" layoutY="244.0" onAction="#viewname" selected="true" text="姓名" />
+                                        <JFXToggleButton fx:id="birthday" layoutX="8.0" layoutY="304.0" onAction="#viewbirthday" selected="true" text="出生日期" />
+                                        <JFXToggleButton fx:id="sex" layoutX="8.0" layoutY="364.0" onAction="#viewsex" selected="true" text="性别" />
+                                        <JFXToggleButton fx:id="phone" layoutX="8.0" layoutY="424.0" onAction="#viewphone" selected="true" text="联系电话" />
+                                        <JFXToggleButton fx:id="eperson" layoutX="8.0" layoutY="484.0" onAction="#vieweperson" selected="true" text="紧急联系人" />
+                                        <JFXToggleButton fx:id="ephone" layoutX="8.0" layoutY="544.0" onAction="#viewephone" selected="true" text="紧急电话" />
+                                        <JFXTextField fx:id="searchfield" layoutX="185.0" layoutY="83.0" onKeyReleased="#search" promptText="搜索姓名" />
+                                        <JFXProgressBar fx:id="progressbar" layoutX="185.0" layoutY="132.0" prefHeight="4.0" prefWidth="1098.0" />
+                                        <TableView fx:id="tableview3" layoutX="185.0" layoutY="135.0" prefHeight="600.0" prefWidth="1098.0" visible="false">
+                                            <columns>
+                                                <TableColumn fx:id="typecol" prefWidth="138.0" text="房间类型" />
+                                                <TableColumn fx:id="rlocationcol" prefWidth="290.0" text="位置" />
+                                                <TableColumn fx:id="capacitycol" prefWidth="131.0" text="最大容纳量" />
+                                                <TableColumn fx:id="explaincol" prefWidth="358.0" text="说明" />
+                                                <TableColumn fx:id="waitcol" prefWidth="178.0" text="等待时间" />
+                                            </columns>
+                                        </TableView>
+                                        <TableView fx:id="tableview2" layoutX="185.0" layoutY="135.0" prefHeight="600.0" prefWidth="1098.0" visible="false">
+                                            <columns>
+                                                <TableColumn fx:id="bidcol" prefWidth="75.0" text="ID" />
+                                                <TableColumn fx:id="blocationcol" prefWidth="284.0" text="位置" />
+                                                <TableColumn fx:id="bstartcol" minWidth="0.0" prefWidth="110.0" text="入住开始时间" />
+                                                <TableColumn fx:id="bendcol" minWidth="0.0" prefWidth="115.0" text="入住结束时间" />
+                                                <TableColumn fx:id="bstatuscol" prefWidth="73.0" text="状态" />
+                                                <TableColumn fx:id="bnamecol" minWidth="0.0" prefWidth="82.0" text="姓名" />
+                                                <TableColumn fx:id="bsexcol" prefWidth="50.0" text="性别" />
+                                                <TableColumn fx:id="bagecol" minWidth="0.0" prefWidth="112.0" text="出生日期" />
+                                                <TableColumn fx:id="bidcodecol" minWidth="0.0" prefWidth="193.0" text="档案编号" />
+                                            </columns>
+                                        </TableView>
+                                        <TableView fx:id="tableview1" layoutX="185.0" layoutY="135.0" prefHeight="600.0" prefWidth="1098.0">
+                                            <columns>
+                                                <TableColumn fx:id="namecol" prefWidth="183.0" text="姓名" />
+                                                <TableColumn fx:id="birthcol" prefWidth="183.0" text="出生日期" />
+                                                <TableColumn fx:id="sexcol" prefWidth="183.0" text="性别" />
+                                                <TableColumn fx:id="phonecol" prefWidth="183.0" text="联系电话" />
+                                                <TableColumn fx:id="epersoncol" prefWidth="183.0" text="紧急联系人" />
+                                                <TableColumn fx:id="ephonecol" prefWidth="183.0" text="紧急联系人电话" />
+                                            </columns>
+                                        </TableView>
+                              <TableView fx:id="tableview4" layoutX="185.0" layoutY="135.0" prefHeight="600.0" prefWidth="1098.0" visible="false">
+                                 <columns>
+                                    <TableColumn fx:id="anamecol" prefWidth="167.0" text="姓名" />
+                                    <TableColumn fx:id="asexcol" prefWidth="55.0" text="性别" />
+                                    <TableColumn fx:id="atnamecol" prefWidth="159.0" text="模板名称" />
+                                    <TableColumn fx:id="attypecol" prefWidth="82.0" text="模板类型" />
+                                    <TableColumn fx:id="atimecol" prefWidth="315.0" text="评估时间" />
+                                    <TableColumn fx:id="apnamecol" prefWidth="141.0" text="评估人" />
+                                    <TableColumn fx:id="alevelcol" prefWidth="175.0" text="评估等级" />
+                                 </columns>
+                              </TableView>
+                                        <Label fx:id="timeInfoLabel" layoutX="827.0" layoutY="83.0" prefHeight="33.0" prefWidth="429.0" text="欢迎！现在是 %d年%d月%d日, %02d:%02d:%02d">
+                                            <font>
+                                                <Font size="23.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="评估管理">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <SplitPane dividerPositions="0.5" layoutX="487.0" layoutY="184.0" prefHeight="688.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                            <children>
+                                                <SplitPane dividerPositions="0.12134502923976608" layoutX="196.0" layoutY="175.0" orientation="VERTICAL" prefHeight="686.0" prefWidth="635.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                    <items>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                            <children>
+                                                                <BorderPane layoutX="193.0" layoutY="14.0" prefHeight="247.0" prefWidth="633.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                    <bottom>
+                                                                        <ButtonBar prefHeight="33.0" prefWidth="260.0" BorderPane.alignment="CENTER">
+                                                                            <buttons>
+                                                                                <JFXButton fx:id="tadd" buttonType="RAISED" onAction="#tadd" style="-fx-background-color: #5CB2FF;" text="添加" textFill="WHITE" />
+                                                                                <JFXButton fx:id="tedit" buttonType="RAISED" onAction="#tedit" style="-fx-background-color: #5CB2FF;" text="修改" textFill="WHITE" />
+                                                                                <JFXButton fx:id="tdelete" buttonType="RAISED" onAction="#tdelete" style="-fx-background-color: #5CB2FF;" text="删除" textFill="WHITE" />
+                                                                                <JFXButton fx:id="tdetails" buttonType="RAISED" onAction="#tdetails" style="-fx-background-color: #B7FCA7;" text="详情" />
+                                                                            </buttons>
+                                                                        </ButtonBar>
+                                                                    </bottom>
+                                                                    <left>
+                                                                        <JFXTextField fx:id="tsearch" onKeyReleased="#tsearch" promptText="搜索ID" BorderPane.alignment="CENTER" />
+                                                                    </left>
+                                                                </BorderPane>
+                                                            </children>
+                                                        </AnchorPane>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                            <children>
+                                                                <TableView fx:id="ttableview" layoutX="227.0" layoutY="115.0" prefHeight="429.0" prefWidth="633.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                    <columns>
+                                                                        <TableColumn prefWidth="38.0" />
+                                                                        <TableColumn fx:id="tidcol" prefWidth="77.0" text="ID" />
+                                                                        <TableColumn fx:id="tnamecol" prefWidth="337.0" text="模板名称" />
+                                                                        <TableColumn fx:id="ttypecol" prefWidth="180.0" text="类型" />
+                                                                    </columns>
+                                                                    <columnResizePolicy>
+                                                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                                    </columnResizePolicy>
+                                                                </TableView>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </items>
+                                                </SplitPane>
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                            <children>
+                                                <SplitPane dividerPositions="0.12134502923976608" layoutX="158.0" layoutY="234.0" orientation="VERTICAL" prefHeight="686.0" prefWidth="635.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                    <items>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                            <children>
+                                                                <BorderPane layoutX="101.0" layoutY="55.0" prefHeight="247.0" prefWidth="633.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                    <left>
+                                                                        <JFXTextField fx:id="qsearch" onKeyReleased="#qsearch" promptText="搜索ID" BorderPane.alignment="CENTER" />
+                                                                    </left>
+                                                                    <bottom>
+                                                                        <ButtonBar prefHeight="33.0" prefWidth="260.0" BorderPane.alignment="CENTER">
+                                                                            <buttons>
+                                                                                <JFXButton fx:id="qadd" buttonType="RAISED" onAction="#qadd" style="-fx-background-color: #5CB2FF;" text="添加" textFill="WHITE" />
+                                                                                <JFXButton fx:id="qedit" buttonType="RAISED" onAction="#qedit" style="-fx-background-color: #5CB2FF;" text="修改" textFill="WHITE" />
+                                                                                <JFXButton fx:id="qdelete" buttonType="RAISED" onAction="#qdelete" style="-fx-background-color: #5CB2FF;" text="删除" textFill="WHITE" />
+                                                                            </buttons>
+                                                                        </ButtonBar>
+                                                                    </bottom>
+                                                                </BorderPane>
+                                                            </children>
+                                                        </AnchorPane>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                            <children>
+                                                                <TableView fx:id="qtableview" layoutX="136.0" layoutY="86.0" prefHeight="429.0" prefWidth="633.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                    <columns>
+                                                                        <TableColumn fx:id="qcbcol" prefWidth="38.0" />
+                                                                        <TableColumn fx:id="qidcol" prefWidth="58.0" text="ID" />
+                                                                        <TableColumn fx:id="qtextcol" prefWidth="479.0" text="问题" />
+                                                                        <TableColumn fx:id="qtypecol" prefWidth="57.0" text="类型" />
+                                                                    </columns>
+                                                                    <columnResizePolicy>
+                                                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                                    </columnResizePolicy>
+                                                                </TableView>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </items>
+                                                </SplitPane>
+                                            </children>
+                                        </AnchorPane>
+                                    </items>
+                                </SplitPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="账号设置">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <AnchorPane layoutX="340.0" layoutY="-37.0" prefHeight="705.0" prefWidth="600.0">
+                                    <children>
+                                        <JFXTextField fx:id="zname" layoutX="126.0" layoutY="196.0" prefHeight="30.0" prefWidth="387.0" />
+                                        <JFXTextField fx:id="zpassword" layoutX="126.0" layoutY="491.0" prefHeight="30.0" prefWidth="387.0" />
+                                        <JFXTextField fx:id="zspcialty" layoutX="125.0" layoutY="417.0" prefHeight="30.0" prefWidth="387.0" />
+                                        <JFXTextField fx:id="zphone" layoutX="126.0" layoutY="270.0" prefHeight="30.0" prefWidth="387.0" />
+                                        <JFXDatePicker fx:id="zbirthday" defaultColor="#4059a9" editable="false" layoutX="126.0" layoutY="345.0" prefHeight="30.0" prefWidth="421.0" />
+                                        <Label layoutX="54.0" layoutY="280.0" text="手机号：" />
+                                        <Label layoutX="69.0" layoutY="206.0" text="姓名：" />
+                                        <Label layoutX="69.0" layoutY="354.0" text="生日：" />
+                                        <Label layoutX="69.0" layoutY="427.0" text="专长：" />
+                                        <Label layoutX="69.0" layoutY="501.0" text="密码：" />
+                                        <JFXButton buttonType="RAISED" layoutX="245.0" layoutY="638.0" onAction="#zconfirm" prefHeight="47.0" prefWidth="111.0" style="-fx-background-color: #77c2bb;" text="确定" />
+                                        <Label prefHeight="725.0" prefWidth="45.0" style="-fx-background-color: #5CB2FF;" />
+                                        <Label layoutX="555.0" prefHeight="725.0" prefWidth="45.0" style="-fx-background-color: #5CB2FF;" />
+                                        <ImageView fitHeight="91.0" fitWidth="326.0" layoutX="138.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../img/zh.png" />
+                                            </image>
+                                        </ImageView>
+                                        <JFXButton fx:id="signout" buttonType="RAISED" layoutX="382.0" layoutY="645.0" onAction="#signout" prefHeight="33.0" prefWidth="82.0" style="-fx-background-color: #E81123 #E81123;" text="注销" textFill="WHITE" />
+                                    </children>
+                                </AnchorPane>
+                                <Label fx:id="usingtext" layoutX="14.0" layoutY="633.0" prefHeight="41.0" prefWidth="278.0" text="已登录账号">
+                                    <font>
+                                        <Font size="21.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </JFXTabPane>
+    </children>
+</AnchorPane>

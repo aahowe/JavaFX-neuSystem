@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.view.controller.AnalyzeController">
+   <children>
+      <Label layoutX="195.0" layoutY="-6.0" prefHeight="738.0" prefWidth="20.0" style="-fx-background-color: #84C3FF;" />
+      <Label layoutX="554.0" layoutY="-5.0" prefHeight="738.0" prefWidth="20.0" style="-fx-background-color: #84C3FF;" />
+      <Label layoutX="915.0" layoutY="-4.0" prefHeight="738.0" prefWidth="20.0" style="-fx-background-color: #84C3FF;" />
+      <JFXComboBox fx:id="select" layoutX="9.0" layoutY="34.0" onAction="#select" prefHeight="33.0" prefWidth="177.0" promptText="模板选择" />
+      <Label fx:id="q1" layoutX="230.0" layoutY="24.0" prefHeight="102.0" prefWidth="307.0" text="问题一" />
+      <Label fx:id="q2" layoutX="590.0" layoutY="24.0" prefHeight="102.0" prefWidth="307.0" text="问题二" />
+      <Label fx:id="q3" layoutX="950.0" layoutY="24.0" prefHeight="102.0" prefWidth="307.0" text="问题三" />
+      <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="644.0" onAction="#comfirm" prefHeight="69.0" prefWidth="157.0" style="-fx-background-color: #61E55B;" text="进行评估" textFill="WHITE" />
+      <JFXCheckBox fx:id="q1c1" layoutX="237.0" layoutY="247.0" onAction="#q1c1" text="A" />
+      <Label fx:id="q1a1" layoutX="237.0" layoutY="157.0" prefHeight="83.0" prefWidth="298.0" text="Lable" />
+      <JFXCheckBox fx:id="q1c2" layoutX="237.0" layoutY="434.0" onAction="#q1c2" text="B" />
+      <Label fx:id="q1a2" layoutX="237.0" layoutY="344.0" prefHeight="83.0" prefWidth="298.0" text="Label" />
+      <JFXCheckBox fx:id="q1c3" layoutX="237.0" layoutY="624.0" onAction="#q1c3" text="C" />
+      <Label fx:id="q1a3" layoutX="237.0" layoutY="534.0" prefHeight="83.0" prefWidth="298.0" text="Label" />
+      <JFXCheckBox fx:id="q2c1" layoutX="595.0" layoutY="247.0" onAction="#q2c1" text="A" />
+      <Label fx:id="q2a1" layoutX="595.0" layoutY="157.0" prefHeight="83.0" prefWidth="298.0" text="Label" />
+      <JFXCheckBox fx:id="q2c2" layoutX="595.0" layoutY="434.0" onAction="#q2c2" text="B" />
+      <Label fx:id="q2a2" layoutX="595.0" layoutY="344.0" prefHeight="83.0" prefWidth="298.0" text="Label" />
+      <JFXCheckBox fx:id="q2c3" layoutX="595.0" layoutY="624.0" onAction="#q2c3" text="C" />
+      <Label fx:id="q2a3" layoutX="595.0" layoutY="534.0" prefHeight="83.0" prefWidth="298.0" text="Label" />
+      <JFXCheckBox fx:id="q3c1" layoutX="955.0" layoutY="248.0" onAction="#q3c1" text="A" />
+      <Label fx:id="q3a1" layoutX="955.0" layoutY="158.0" prefHeight="83.0" prefWidth="298.0" text="Label" />
+      <JFXCheckBox fx:id="q3c2" layoutX="955.0" layoutY="435.0" onAction="#q3c2" text="B" />
+      <Label fx:id="q3a2" layoutX="955.0" layoutY="345.0" prefHeight="83.0" prefWidth="298.0" text="Label" />
+      <JFXCheckBox fx:id="q3c3" layoutX="955.0" layoutY="625.0" onAction="#q3c3" text="C" />
+      <Label fx:id="q3a3" layoutX="955.0" layoutY="535.0" prefHeight="83.0" prefWidth="298.0" text="Label" />
+      <JFXSpinner fx:id="loading" layoutX="68.0" layoutY="644.0" prefHeight="69.0" prefWidth="69.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Question>
+    <Question>
+        <a1>让3让3</a1>
+        <a2>3133</a2>
+        <a3>而成阿 </a3>
+        <id>232</id>
+        <text>233让</text>
+        <type>A</type>
+    </Question>
+    <Question>
+        <a1>3213</a1>
+        <a2>32131</a2>
+        <a3>3213</a3>
+        <id>123123</id>
+        <text>34124</text>
+        <type>B</type>
+    </Question>
+    <Question>
+        <a1>34324</a1>
+        <a2>423423</a2>
+        <a3>432432</a3>
+        <id>122</id>
+        <text>1123213</text>
+        <type>A</type>
+    </Question>
+</Question>

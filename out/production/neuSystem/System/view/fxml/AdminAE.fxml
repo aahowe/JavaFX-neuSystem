@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.view.controller.AdminAEController">
+   <children>
+      <JFXTextField fx:id="id" layoutX="126.0" layoutY="123.0" prefHeight="30.0" prefWidth="387.0" />
+      <JFXTextField fx:id="name" layoutX="126.0" layoutY="197.0" prefHeight="30.0" prefWidth="387.0" />
+      <JFXTextField fx:id="password" layoutX="126.0" layoutY="567.0" prefHeight="30.0" prefWidth="387.0" />
+      <JFXTextField fx:id="spcialty" layoutX="126.0" layoutY="493.0" prefHeight="30.0" prefWidth="387.0" />
+      <JFXComboBox fx:id="jobtitle" layoutX="126.0" layoutY="419.0" prefHeight="20.0" prefWidth="387.0" />
+      <JFXTextField fx:id="phone" layoutX="126.0" layoutY="271.0" prefHeight="30.0" prefWidth="387.0" />
+      <JFXDatePicker fx:id="birthday" defaultColor="#4059a9" editable="false" layoutX="126.0" layoutY="346.0" prefHeight="30.0" prefWidth="421.0" />
+      <Label layoutX="54.0" layoutY="133.0" text="用户名：" />
+      <Label layoutX="54.0" layoutY="281.0" text="手机号：" />
+      <Label layoutX="69.0" layoutY="207.0" text="姓名：" />
+      <Label layoutX="69.0" layoutY="355.0" text="生日：" />
+      <Label layoutX="69.0" layoutY="429.0" text="职称：" />
+      <Label layoutX="69.0" layoutY="503.0" text="专长：" />
+      <Label layoutX="69.0" layoutY="577.0" text="密码：" />
+      <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="641.0" onAction="#confirm" prefHeight="47.0" prefWidth="111.0" style="-fx-background-color: #77c2bb;" text="确定" />
+      <JFXButton buttonType="RAISED" layoutX="340.0" layoutY="641.0" onAction="#cancel" prefHeight="47.0" prefWidth="111.0" style="-fx-background-color: #E81123;" text="取消" textFill="WHITE" />
+      <Label prefHeight="725.0" prefWidth="45.0" style="-fx-background-color: #5CB2FF;" />
+      <Label layoutX="555.0" prefHeight="725.0" prefWidth="45.0" style="-fx-background-color: #5CB2FF;" />
+      <ImageView fitHeight="178.0" fitWidth="367.0" layoutX="117.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/admae.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
