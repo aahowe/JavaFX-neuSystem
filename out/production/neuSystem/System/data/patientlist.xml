@@ -18,4 +18,13 @@
         <idcode>321312</idcode>
         <sex>男</sex>
     </Patient>
+    <Patient>
+        <birthday>2021-7-1</birthday>
+        <name>fdss</name>
+        <phone>3131231213</phone>
+        <emergency>13123</emergency>
+        <emerphone>1231</emerphone>
+        <idcode>31231</idcode>
+        <sex>男</sex>
+    </Patient>
 </Patient>

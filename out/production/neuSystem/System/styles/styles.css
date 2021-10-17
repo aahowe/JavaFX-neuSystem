@@ -22,7 +22,6 @@
 }
 .table-view .column-header .label{
     -fx-font-size:14px;
-    -fx-text-fill: -color-primary;
     -fx-padding:16 0 16 0;
     -fx-alignment:CENTER-LEFT;
     -fx-font-weight:400;
@@ -32,7 +31,7 @@
 }
 
 .table-view .table-row-cell:selected .table-cell{
-    -fx-text-fill: -color-dark-primary;
+    -fx-text-fill: black;
     -fx-border-width: 0 0 0 0;
 }
 .table-view .table-row-cell:selected{
@@ -62,7 +61,6 @@
     -fx-padding:0 8 8 8;
     -fx-background-insets: 0;
     -fx-border-width:0 0 2 0;
-    -fx-border-color: -color-primary;
 }
 
 .table-view .corner{
