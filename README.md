@@ -1,9 +1,9 @@
 # neuSystem
 ### 东北大学2021.07实训项目
 
-*JDK1.8
+* JDK1.8
 
-*JFoenix
+* JFoenix
 
 数据存储用的XML
 
